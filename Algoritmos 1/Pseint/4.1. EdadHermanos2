@@ -1,0 +1,17 @@
+Algoritmo EdadHermanos2
+	Escribir "Escriba la edad del Primer Hermano"
+	Leer hermano1
+	Escribir "Escriba la edad del Segundo Hermano"
+	Leer hermano2
+	msg = ""
+	Si hermano1>hermano2
+		msg <- "Primer hermano es mayor,"
+	SiNo 
+		msg <- "el segundo hermano es mayor,"
+	FinSi
+	
+	diferencia <- abs(hermano1-hermano2) 
+	
+	Escribir msg,"La diferencia de edad es: ",diferencia
+	
+FinAlgoritmo

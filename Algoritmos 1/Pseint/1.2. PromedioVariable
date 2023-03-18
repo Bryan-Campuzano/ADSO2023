@@ -1,0 +1,23 @@
+Algoritmo PromedioVariable
+	Definir notas Como Entero
+	Definir suma Como Real
+	Definir promedio Como Real
+	Definir n Como Real
+	Definir acumulado Como Entero
+	acumulado <- 1
+	suma <- 0 
+	
+	Escribir "Indica cuantas notas desea promediar: "
+	Leer notas
+	
+	Mientras acumulado <= notas Hacer
+		Escribir "Escribir nota # ", acumulado,":"
+		leer n
+		suma = suma + n
+		acumulado = acumulado +1
+	FinMientras
+	
+	promedio = suma / notas
+	Escribir "el promedio de las notas dadas es: " , promedio
+	
+FinAlgoritmo
