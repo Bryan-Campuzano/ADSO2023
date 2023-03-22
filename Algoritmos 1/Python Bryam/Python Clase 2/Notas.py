@@ -1,6 +1,10 @@
-""" Este Script indica una nota Alfabetica a una nota numerica dada
+""" Este Script indica una nota Alfabética a una nota numérica dada
 """
-
+#------------------------ZONA DE CÓDIGO 1------------------------
+"""Este método se encarga de, dada una nota en numérico, dar su valor en un mensaje calificativo
+        parámetros: nota: la nota en numérico
+        retorna:    msg: mensaje con la calificacion en literales
+"""
 def calificacion(nota):
     msg = ""
     if nota >= 90:
@@ -12,7 +16,7 @@ def calificacion(nota):
     else:
         msg = "Reprobado"
     return msg
-
+#-------------------------ZONA DE TEST 1-------------------------
 print(f'Su Nota Es: {calificacion(95)}')
 print(f'Su Nota Es: {calificacion(90)}')
 print(f'Su Nota Es: {calificacion(85)}')
@@ -21,3 +25,5 @@ print(f'Su Nota Es: {calificacion(75)}')
 print(f'Su Nota Es: {calificacion(70)}')
 print(f'Su Nota Es: {calificacion(60)}')
 print(f'Su Nota Es: {calificacion(55)}')
+
+#   appEnd
