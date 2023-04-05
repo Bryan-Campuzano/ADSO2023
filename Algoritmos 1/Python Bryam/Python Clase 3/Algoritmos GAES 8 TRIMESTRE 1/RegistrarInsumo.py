@@ -2,7 +2,7 @@
 """
 #------------------------INICIALIZACION--------------------------
 
-catalogo = []                                                      #   Lista contenedora de los productos
+catalogo = []                                                                                       #   Lista contenedora de los productos
 
 #------------------------ZONA DE CÓDIGO 1------------------------
 

@@ -21,7 +21,7 @@ producto3 = {
     'valorUnidad': 1000.0
 }
 
-ventasC1 = [producto1,producto2,producto3]                                                                                       #   Lista contenedora de los productos
+ventasC1 = [producto1,producto2,producto3]                                                          #   Lista contenedora de los productos
 
 #------------------------ZONA DE CÓDIGO 1------------------------
 
@@ -31,17 +31,17 @@ ventasC1 = [producto1,producto2,producto3]                                      
 """
 def ventasTotales (parCatalogo):
     msg = ""                                                                                        #   inicializamos el mensaje de retorno
-    sumaTotal = 0.0
-    for i in range (len(parCatalogo)):
-        productoActual = parCatalogo[i]
-        sumaParcial = 0.0 
-        if productoActual is None:
+    sumaTotal = 0.0                                                                                 #   inicializamos una suma en cero para almacenar el total del valor de las ventas
+    for i in range (len(parCatalogo)):                                                              #   recorremos el catalogo de ventas
+        productoActual = parCatalogo[i]                                                             #   creamos una variable temporal con el diccionario (producto) actual
+        sumaParcial = 0.0                                                                           #   inicializamos una suma parcial en cero, esta suma es el producto de la cantidad de elementos vendidos y su valor unitario
+        if productoActual is None:                                                                  #   si el producto actual esta vacío, no hacemos nada
             None
         else:
-            sumaParcial = productoActual['cantidadVendida'] * productoActual['valorUnidad']
+            sumaParcial = productoActual['cantidadVendida'] * productoActual['valorUnidad']         #   hacemos el producto y lo guardamos en la suma total
             sumaTotal += sumaParcial
-    msg = f"la suma de las ventas totales del catalogo dado es: {sumaTotal}"
-    return msg
+    msg = f"la suma de las ventas totales del catalogo dado es: {sumaTotal}"                        #   actualizamos el mensaje
+    return msg                                                                                      #   retornamos el mensaje con el resultado de la operación
 #-------------------------ZONA DE TEST 1-------------------------
 
 print(ventasTotales(ventasC1))
