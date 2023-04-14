@@ -6,20 +6,20 @@
     return: frase: la frase a procesar
 """
 def recepcion():
-    frase = input("Indique Una oración cualquiera ")                #   solicitamos una oración por terminal
-    return frase                                                    #   retornamos la frase
+    frase = input("Indique Una oración cualquiera ")                                                    #   solicitamos una oración por terminal
+    return frase                                                                                        #   retornamos la frase
 
 """ esta función identifica la palabra mas larga en una oración dada
     parámetros: frase: frase a procesar
     return: msg: mensaje con la palabra mas larga identificada
 """
-def masLarga (frase):
-    masLarga = ""
-    fraseSeparada = frase.split()
-    for i in range (len(fraseSeparada)):
-        if len(fraseSeparada[i]) > len(masLarga):
-            masLarga = fraseSeparada[i]
-    msg = f"la palabra mas larga de la frase dada es {masLarga}"
+def masLarga (frase):                                                                                   #   le damos una frase en forma de cadena 'str'
+    masLarga = ""                                                                                       #   inicializamos una variable vacía que ha de contener la palabra mas larga
+    fraseSeparada = frase.split()                                                                       #   separamos la cadena dada dividiéndola en los espacios vacíos ' ' guardamos cada palabra en una posición de la lista
+    for i in range (len(fraseSeparada)):                                                                #   recorremos la lista de palabras
+        if len(fraseSeparada[i]) > len(masLarga):                                                       #   comparamos la palabra actual con la mas larga, mediante el método 'len', este me da el largo de la cadena, contando la cantidad de caracteres que la conforman, que en esencia es el largo de la palabra
+            masLarga = fraseSeparada[i]                                                                 #   si la palabra actual es mas larga que la almacenada, la intercambiamos
+    msg = f"la palabra mas larga de la frase dada es {masLarga}"                                        #   retornamos la palabra mas larga encontrada
     return msg
     
 #-------------------------ZONA DE TEST 1-------------------------

@@ -1,3 +1,6 @@
+""" ESTE ES UN ALGORITMO GENERADO POR CHAT-GPT: este algoritmo ordena una lista de palabras en su orden alfabético SIN USAR
+    el método 'sorted()'
+"""
 def ordenar_palabras(lista):
     """Ordena una lista de palabras en orden alfabético"""
     n = len(lista)
