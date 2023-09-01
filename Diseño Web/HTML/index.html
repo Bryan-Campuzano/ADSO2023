@@ -4,39 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primer proyecto en HTML</title>
+    <style>
+        /* Aplica estilos de centrado al contenedor principal */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Esto centra verticalmente en la ventana del navegador */
+            text-align: center; /* Esto centra horizontalmente el texto */
+        }
+    </style>
 </head>
-<body background= "multimedia/universo.jpg">
-    <table border="5">
-        <thead>
-            <tr>
-                <th>Imagenes</th>
-                <th>Youtube</th>
-                <th>Videos Locales</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Logo COLTEXT principal</td>
-                <td>Tutorial HTML</td>
-                <td>Hotline Miami OST</td>
-            </tr>
-            <tr>
-                <td><img src="multimedia/LOGO PRINCIPAL 2.PNG" width="560" height="315"></td>
-                <td><iframe width="560" height="315" src="https://www.youtube.com/embed/rbuYtrNUxg4?si=SvMDLeUBrOJaV1vg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
-                <td><video width="560" height="315" controls><source src="multimedia/Hotline Miami Soundtrack ~ Crystals.mp4" type="video/mp4"></video></td>
-            </tr>
-            <tr>
-                <td>logo COLTEXT secundario</td>
-                <td>Tutorial CSS</td>
-                <td>Hollow knight OST</td>
-            </tr>
-            <tr>
-                <td><img src="multimedia/LOGO COLTEXT SECUNDARIO.PNG" width="560" height="315"></td>
-                <td><iframe width="560" height="315" src="https://www.youtube.com/embed/wZniZEbPAzk?si=Fz1SkHC80dwdAB96" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
-                <td><video width="560" height="315" controls><source src="multimedia/Hollow Knight OST - Enter Hallownest.mp4" type="video/mp4"></video></td>
-            </tr>
-        </tbody>
-    </table>
+<body background= "C:\Users\HP\Downloads\ADSO2023\Diseño Web\HTML\multimedia\universo.jpg">
+    <div class="container">
+        <h1 style="color: white;">Tabla Editable de Prueba</h1>
+        <p style="color: white;">Creamos todas las ediciones necesarias sobre la tabla default</p>
+        <table border="5">
+            <thead>
+                <tr>
+                    <th>Imágenes</th>
+                    <th>YouTube</th>
+                    <th>Videos Locales</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Logo COLTEXT principal</td>
+                    <td>Tutorial HTML</td>
+                    <td>Hotline Miami OST</td>
+                </tr>
+                <tr>
+                    <td><img src="multimedia/LOGO PRINCIPAL 2.PNG" width="560" height="315"></td>
+                    <td><iframe width="560" height="315" src="https://www.youtube.com/embed/rbuYtrNUxg4?si=SvMDLeUBrOJaV1vg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+                    <td><video width="560" height="315" controls><source src="C:\Users\HP\Downloads\ADSO2023\Diseño Web\HTML\multimedia\Hotline Miami Soundtrack ~ Crystals.mp4" type="video/mp4"></video></td>
+                </tr>
+                <tr>
+                    <td>logo COLTEXT secundario</td>
+                    <td>Tutorial CSS</td>
+                    <td>Hollow knight OST</td>
+                </tr>
+                <tr>
+                    <td><img src="multimedia/LOGO COLTEXT SECUNDARIO.PNG" width="560" height="315"></td>
+                    <td><iframe width="560" height="315" src="https://www.youtube.com/embed/wZniZEbPAzk?si=Fz1SkHC80dwdAB96" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+                    <td><video width="560" height="315" controls><source src="C:\Users\HP\Downloads\ADSO2023\Diseño Web\HTML\multimedia\Hollow Knight OST - Enter Hallownest.mp4" type="video/mp4"></video></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
 </body>
 </html>
