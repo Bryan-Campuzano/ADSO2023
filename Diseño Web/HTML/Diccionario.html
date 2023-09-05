@@ -4,25 +4,183 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DICCIONARIO DE ETIQUETAS HTML</title>
+    <style>
+        /* Aplica estilos de centrado al contenedor principal */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center; /* Esto centra horizontalmente el texto */
+        }
+    </style>
+    <style>
+        .justificado-izquierda {
+            width: 600px; /* Ancho deseado */
+            height: auto; /* Altura deseada */
+            text-align: left;
+        }
+    </style>
+    <style>
+        body {
+            background-color: #d9d9d9; /* Cambia #FF0000 a tu color hexadecimal deseado */
+        }
+    </style>
+    <style>
+        .cuadrado {
+            width: 200px; /* Ancho deseado */
+            height: 200px; /* Altura deseada */
+            text-align:left; /* Alinea el texto en el centro del cuadrado */
+        }
+    </style> 
 </head>
-<body>
-    <table border = "4">
-        <thead>
-            <tr>
-                <th>Titulo</th>
-                <th>Descripción</th>
-                <th>Código</th>
-                <th>Dificultad</th>
-            </tr>
-        </thead>
-        </tbody>
-            <tr>
-                <th>HTML: 5</th>
-                <th>es un atajo para poder generar una estructura básica de html 5</th>
-                <th>después de escribir "html: 5" en la primera linea le das "ENTER"</th>
-                <th>FÁCIL</th>
-            </tr>
-        </tbody>
-    </table>
+<body background="grey">
+    <div class="container">
+        <h1>DICCIONARIO DE ETIQUETAS HTML</h1>
+        <table border = "2">
+            <thead>
+                <tr>
+                    <th>Etiqueta</th>
+                    <th>Descripción</th>
+                    <th>Dificultad</th>
+                    <th>Código</th>
+                </tr>
+            </thead>
+            </tbody>
+                <tr>
+                    <th>HTML: 5</th>
+                    <th>
+                        <div class="cuadrado">
+                            es un atajo para poder generar una estructura básica de HTML 5.<br>NOTA: TODAS LAS ETIQUETAS TIENEN UN ESPACIO INTERMEDIO O UN PUNTO<br> esto es para poder manejar el codigo html sin que el editor de texto compile el codigo introducido
+                        </div>
+                    </th>
+                    <th>Baja</th>
+                    <th> 
+                    <div class="justificado-izquierda">
+                        al introducir el texto "html: 5" la estructura de este comando queda tal que asi: <br>
+                        <pre>
+                            <code style="color:blue">
+<.!DOCTYPE html>
+<.html lang="en">
+    <.head>
+    <.meta charset="UTF-8">
+    <.meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <.title>DICCIONARIO DE ETIQUETAS HTML</.title>
+    </.head>
+    <.body>
+    
+    todos los cambios que se generen en la pagina <br>      o cuerpo de la pagina web tendrán que ser consignados aquí
+                                
+    < body>
+< html>
+                            </code>
+                        </pre> 
+                        de esta manera podrás generar una estructura básica de HTML donde todos cambios se hacen dentro del body de la pagina
+                    </div>
+                    </th>
+                </tr>
+                <tr>
+                    <th>< head></th>
+                    <th>
+                        <div class="cuadrado">
+                            < head> en HTML se utiliza para proporcionar información esencial sobre la página y enlazar recursos externos que ayudan a dar forma y mejorar la experiencia del usuario y la optimización de motores de búsqueda. Los contenidos de < head> no se muestran directamente en la página pero son críticos para su funcionamiento y presentación. NOTA: LOS 'style' van sin puntos
+                        </div>
+                    </th>
+                    <th>Baja</th>
+                    <th> 
+                    <div class="justificado-izquierda">
+                        Por ejemplo, el head de este mismo documento tiene la siguiente forma: <br>
+                        <pre>
+                            <code style="color:blue">
+<.head>
+    <.meta charset="UTF-8">
+    <.meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <.title>DICCIONARIO DE ETIQUETAS HTML</.title>
+    <.style>
+    /* Aplica estilos de centrado al contenedor principal */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center; /* Esto centra horizontalmente el texto */
+            }
+    </.style>
+    <.style>
+        .justificado-izquierda {
+            width: 600px; /* Ancho deseado */
+            height: auto; /* Altura deseada */
+            text-align: left;
+            }
+    </.style>
+    <.style>
+        /* Cambia #FF0000 a tu color hexadecimal deseado */
+        body {
+            background-color: #d9d9d9; 
+            }
+    </.style>
+    <.style>
+        .cuadrado {
+            width: 200px; /* Ancho deseado */
+            height: 200px; /* Altura deseada */
+            text-align:center; /*Alinea el texto en el centro del cuadrado*/
+            }
+    < /style> 
+< /head>
+                            </code>
+                        </pre> 
+                        Aquí podemos ver varias configuraciones hechas al código que no se ven reflejadas dentro de este documento, como puede ser el color de fondo, el color del codigo escrito, o incluso la disposición de los diferentes elementos de la tabla.
+                    </div>
+                    </th>
+                </tr>
+                <tr>
+                    <th><.style></th>
+                    <th>
+                        <div class="cuadrado">
+                            Es una etiqueta que permite utilizar estilos de CSS dentro del propio codigo HTML, se crea dentro del Head y permite asignarle ciertas cualidades como colores, contornos, etc. 
+                        </div>
+                    </th>
+                    <th>Baja</th>
+                    <th> 
+                    <div class="justificado-izquierda">
+                        al introducir el texto "html: 5" se genera el siguiente texto: <br>
+                        <pre>
+                            <code style="color:blue">
+<.style>
+    .cuadrado {
+    width: 200px; /* Ancho deseado */
+    height: 200px; /* Altura deseada */
+    text-align:left; /* Alinea el texto en el centro del cuadrado */
+    }
+<./style> 
+                            </code>
+                        </pre> 
+                        En este caso, este estilo encapsula el texto en cuadrados para que no supere cierto largo y ancho y se conserve la homogeneidad de la pagina.
+                    </div>
+                    </th>
+                </tr>
+                <tr>
+                    <th><.link</th>
+                    <th>
+                        <div class="cuadrado">
+                            Es una etiqueta que permite enlazar una hoja de estilos CSS al fichero HTML, esto con el fin de poder manejar de manera separada, la estructura de la pagina y sus configuraciones gráficas. 
+                        </div>
+                    </th>
+                    <th>Media</th>
+                    <th> 
+                    <div class="justificado-izquierda">
+                        al introducir el texto "html: 5" se genera el siguiente texto: <br>
+                        <pre>
+                            <code style="color:blue">
+<.link rel="stylesheet" href="estilos.css">
+                            </code>
+                        </pre> 
+                        Agregamos esta linea de codigo junto a la ubicación del fichero CSS en el que se encuentra la tabla de estilos CSS. en este Fichero deben encontrarse referenciados las diferentes modificaciones gráficas
+                    </div>
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
