@@ -143,7 +143,7 @@
                     <th>Baja</th>
                     <th> 
                     <div class="justificado-izquierda">
-                        al introducir el texto "html: 5" se genera el siguiente texto: <br>
+                        En el head de la pagina creamos los diferentes estilos que necesitamos para nuestra pagina: <br>
                         <pre>
                             <code style="color:blue">
 <.style>
@@ -155,12 +155,12 @@
 <./style> 
                             </code>
                         </pre> 
-                        En este caso, este estilo encapsula el texto en cuadrados para que no supere cierto largo y ancho y se conserve la homogeneidad de la pagina.
+                        En este caso, este estilo encapsula el texto en cuadrados para que no supere cierto largo y ancho y se conserve la homogeneidad de la pagina. agregamos dentro de la etiqueta del elemento a editar la linea:  "class="cuadrado"" para que esta tome los elementos y características del estilo dado.
                     </div>
                     </th>
                 </tr>
                 <tr>
-                    <th><.link</th>
+                    <th><.link></th>
                     <th>
                         <div class="cuadrado">
                             Es una etiqueta que permite enlazar una hoja de estilos CSS al fichero HTML, esto con el fin de poder manejar de manera separada, la estructura de la pagina y sus configuraciones gráficas. 
@@ -169,13 +169,33 @@
                     <th>Media</th>
                     <th> 
                     <div class="justificado-izquierda">
-                        al introducir el texto "html: 5" se genera el siguiente texto: <br>
+                        En el Head de la pagina creamos la siguiente linea de codigo <br>
                         <pre>
                             <code style="color:blue">
 <.link rel="stylesheet" href="estilos.css">
                             </code>
                         </pre> 
                         Agregamos esta linea de codigo junto a la ubicación del fichero CSS en el que se encuentra la tabla de estilos CSS. en este Fichero deben encontrarse referenciados las diferentes modificaciones gráficas
+                    </div>
+                    </th>
+                </tr>
+                <tr>
+                    <th><.script></th>
+                    <th>
+                        <div class="cuadrado">
+                            Es una etiqueta que permite enlazar un Script de Codigo comúnmente JavaScript al fichero HTML, esto con el fin de poder manejar de manera separada, la lógica de la Pagina y sus principales procesos internos. 
+                        </div>
+                    </th>
+                    <th>Media</th>
+                    <th> 
+                    <div class="justificado-izquierda">
+                        En el Head de la pagina creamos la siguiente linea de codigo <br>
+                        <pre>
+                            <code style="color:blue">
+<.script src="script.js"></.script>
+                            </code>
+                        </pre> 
+                        Remplazamos el "script.js" con la ubicación local del fichero js en el cual se encuentra la lógica del sistema
                     </div>
                     </th>
                 </tr>
