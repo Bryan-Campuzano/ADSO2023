@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DICCIONARIO DE ETIQUETAS HTML</title>
     <style>
-        /* Aplica estilos de centrado al contenedor principal */
+        /* Aplica estilos de centrado al contenedor principal para centrar todo su contenido en la mitad de la pantalla*/
         .container {
             display: flex;
             flex-direction: column;
@@ -51,7 +51,7 @@
                     <th>HTML: 5</th>
                     <th>
                         <div class="cuadrado">
-                            es un atajo para poder generar una estructura básica de HTML 5.<br>NOTA: TODAS LAS ETIQUETAS TIENEN UN ESPACIO INTERMEDIO O UN PUNTO<br> esto es para poder manejar el codigo html sin que el editor de texto compile el codigo introducido
+                            es un atajo para poder generar una estructura básica de HTML 5.<br>NOTA: TODAS LAS ETIQUETAS TIENEN UN ESPACIO INTERMEDIO O UN PUNTO<br> esto es para poder manejar el codigo html sin que el editor de texto compile el codigo introducido.
                         </div>
                     </th>
                     <th>Baja</th>
@@ -83,7 +83,7 @@
                     <th>< head></th>
                     <th>
                         <div class="cuadrado">
-                            < head> en HTML se utiliza para proporcionar información esencial sobre la página y enlazar recursos externos que ayudan a dar forma y mejorar la experiencia del usuario y la optimización de motores de búsqueda. Los contenidos de < head> no se muestran directamente en la página pero son críticos para su funcionamiento y presentación. NOTA: LOS 'style' van sin puntos
+                            < head> en HTML se utiliza para proporcionar información esencial sobre la página y enlazar recursos externos que ayudan a dar forma y mejorar la experiencia del usuario y la optimización de motores de búsqueda. Los contenidos de < head> no se muestran directamente en la página pero son críticos para su funcionamiento y presentación. NOTA: LOS 'style' van sin puntos.
                         </div>
                     </th>
                     <th>Baja</th>
@@ -197,6 +197,114 @@
                         </pre> 
                         Remplazamos el "script.js" con la ubicación local del fichero js en el cual se encuentra la lógica del sistema
                     </div>
+                    </th>
+                </tr>
+                                </tr>
+                <tr>
+                    <th><.body></th>
+                    <th>
+                        <div class="cuadrado">
+                            es el cuerpo de la pagina, cuando no generas divisiones, todo lo que pongas dentro del body es el contenido que sera visible de la pagina.
+                        </div>
+                    </th>
+                    <th>Baja</th>
+                    <th> 
+                    <div class="justificado-izquierda">
+                        dentro de cualquier estructura de html 5 se vera una pareja de llaves como estas: <br>
+                        <pre>
+                            <code style="color:blue">
+<.body>
+    CONTENIDO DE LA PAGINA
+<./body>
+                            </code>
+                        </pre> 
+                        si el codigo de la pagina no es generado dentro, este contenido no sera procesado como parte del campo visible. esto se hace para que los metadatos u otras configuraciones no se procesen como texto dentro de la pagina.
+                    </div>
+                    </th>
+                </tr>   
+                <tr>
+                    <th><.color></th>
+                    <th>
+                        <div class="cuadrado">
+                            Esta etiqueta es la encargada de cambiar todo lo relacionado con los colores de las cosas, desde textos, etc. al añadir colors como etiqueta te salen todas sus combinaciones asociadas como fondos, letras bordes, etc.
+                        </div>
+                    </th>   
+                    <th>Media</th>
+                    <th> 
+                        <div class="justificado-izquierda">
+                            Dentro de la etiqueta de apertura del elemento podemos agregar los colores buscados, también pueden ser agregados a un style dentro del documento o dentro de clases creadas en CSS: <br>
+                        <pre>
+                        <code style="color:blue">
+<.etiqueta color: #ff0000;"></.etiqueta>
+o solo color: #ff0000 cuando esta dentro de una clase
+                        </code>
+                        </pre> 
+                            este color puede ser modelado por rgb, Hex o incluso links externos donde se encuentre el color deseado.
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <th><.div></th>
+                    <th>
+                        <div class="cuadrado">
+                            es una etiqueta que divide en secciones las partes de la pagina, esto se hace con el fin de manejar diferentes bloques de codigo con diferentes configuraciones dentro de la misma pagina.
+                        </div>
+                    </th>   
+                    <th>Media</th>
+                    <th> 
+                        <div class="justificado-izquierda">
+                            dentro de un body en una estructura html 5 ponemos el siguiente par de etiquetas: <br>
+                        <pre>
+                        <code style="color:blue">
+<.div>
+    CONTENIDO DE LA DIVISION
+< /div>
+                        </code>
+                        </pre> 
+                            todo lo que este dentro del div hace parte de una partición diferente del codigo general de la pagina, esto permite generar diferencias, por ejemplo podemos crear clases CSS para diferentes elementos y aplicarlas por separado dentro de divisiones en el codigo, permitiendo la creación de banners, contenidos, animaciones, footers etc. 
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <th><.h1></th>
+                    <th>
+                        <div class="cuadrado">
+                            html al ser una sistema de etiquetas enfocado en la web, la jerarquía de los elementos es crucial para la correcta disposición de los elementos en la pagina, los "h" son una parte importante en esta labor, pues generan títulos organizados en la web.
+                        </div>
+                    </th>   
+                    <th>Baja</th>
+                    <th> 
+                        <div class="justificado-izquierda">
+                            dentro de un body en una estructura html 5 ponemos el siguiente par de etiquetas: <br>
+                        <pre>
+                        <code style="color:blue">
+<.h1> TITULO DEL ELEMENTO < /h1>
+                        </code>
+                        </pre> 
+                            los numeros involucrados dentro de la etiqueta van de 1 a 6 siendo 1 el orden superior y 6 el inferior, pueden entenderse como títulos, subtítulos y títulos terciarios respectivamente, este orden influye en la construcción de la pagina y su posicionamiento en la Web y se relaciona directamente con el SEO.
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <th><.p></th>
+                    <th>
+                        <div class="cuadrado">
+                            Establece el contenido como párrafos dentro de la pagina
+                        </div>
+                    </th>   
+                    <th>Baja</th>
+                    <th> 
+                        <div class="justificado-izquierda">
+                            dentro de un body en una estructura html 5 ponemos el siguiente par de etiquetas: <br>
+                        <pre>
+                        <code style="color:blue">
+<.p> 
+    CONTENIDO DEL PÁRRAFO
+<./p>
+                        </code>
+                        </pre> 
+                            todo el contenido dentro de estas etiquetas sera tomado como texto perteneciente a un párrafo del texto de la pagina.
+                        </div>
                     </th>
                 </tr>
             </tbody>
