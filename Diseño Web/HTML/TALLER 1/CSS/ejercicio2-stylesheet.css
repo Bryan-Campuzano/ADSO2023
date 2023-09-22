@@ -1,0 +1,76 @@
+body{
+    font-family:JetBrains Mono,Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #d9d9d9;
+    margin: 0;
+    padding: 0;
+}
+/* Estilos generales para las cajas */
+.box {
+    margin: 10px;
+    display: inline-block;
+}
+
+/* Estilos para cada color de caja*/
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.teal {
+    background-color: teal;
+}
+
+.brown {
+    background-color: brown;
+}
+
+.gray {
+    background-color: gray;
+}
+/* Estilos para cada tamaño de caja */
+.small {
+    width: 50px;
+    height: 50px;
+}
+
+.medium {
+    width: 100px;
+    height: 100px;
+}
+
+.large {
+    width: 150px;
+    height: 150px;
+}
+
+.x-large {
+    width: 200px;
+    height: 200px;
+}

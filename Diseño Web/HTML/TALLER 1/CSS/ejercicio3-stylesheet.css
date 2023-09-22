@@ -1,0 +1,59 @@
+body{
+    font-family:JetBrains Mono,Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #d9d9d9;
+    margin: 0;
+    padding: 0;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.grid-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los títulos */
+.font1 {
+    font-family: "Times New Roman", serif;
+}
+
+.font2 {
+    font-family: "Arial", sans-serif;
+}
+
+.font3 {
+    font-family: "Courier New", monospace;
+}
+
+.font4 {
+    font-family:JetBrains Mono, monospace;
+}
+/* Estilos para las variaciones de las fuentes */
+.bold{
+    font-weight: bold;
+}
+
+.italic{
+    font-style: italic;
+}
+/* Estilos para los colores */
+.red {
+    color: red;
+}
+
+.blue {
+    color: #0070cc;
+}
+
+.green {
+    color: green;
+}
