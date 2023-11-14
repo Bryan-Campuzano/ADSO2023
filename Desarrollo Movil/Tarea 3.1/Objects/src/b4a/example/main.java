@@ -336,7 +336,6 @@ public class main extends Activity implements B4AActivity{
     }
 
 public anywheresoftware.b4a.keywords.Common __c = null;
-public static anywheresoftware.b4a.objects.B4XViewWrapper.XUI _xui = null;
 public anywheresoftware.b4a.objects.EditTextWrapper _edtvalorproducto = null;
 public anywheresoftware.b4a.objects.ButtonWrapper _btncalculariva = null;
 public anywheresoftware.b4a.objects.LabelWrapper _lblvalororiginal = null;
@@ -350,25 +349,28 @@ public static boolean isAnyActivityVisible() {
 vis = vis | (main.mostCurrent != null);
 return vis;}
 public static String  _activity_create(boolean _firsttime) throws Exception{
- //BA.debugLineNum = 36;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
- //BA.debugLineNum = 37;BA.debugLine="Activity.LoadLayout(\"CalculadoraIVA\")";
+ //BA.debugLineNum = 28;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
+ //BA.debugLineNum = 29;BA.debugLine="Activity.LoadLayout(\"CalculadoraIVA\") ' Cambiado";
 mostCurrent._activity.LoadLayout("CalculadoraIVA",mostCurrent.activityBA);
- //BA.debugLineNum = 38;BA.debugLine="End Sub";
+ //BA.debugLineNum = 30;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_pause(boolean _userclosed) throws Exception{
- //BA.debugLineNum = 32;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
- //BA.debugLineNum = 34;BA.debugLine="End Sub";
+ //BA.debugLineNum = 36;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
+ //BA.debugLineNum = 38;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_resume() throws Exception{
- //BA.debugLineNum = 28;BA.debugLine="Sub Activity_Resume";
- //BA.debugLineNum = 30;BA.debugLine="End Sub";
+ //BA.debugLineNum = 32;BA.debugLine="Sub Activity_Resume";
+ //BA.debugLineNum = 34;BA.debugLine="End Sub";
 return "";
 }
 public static String  _btncalculariva_click() throws Exception{
 double _valorproducto = 0;
 double _tasaiva = 0;
+double _porcentajedescuento = 0;
+double _valordescuento = 0;
+double _valorcondescuento = 0;
 double _valorfinal = 0;
  //BA.debugLineNum = 40;BA.debugLine="Sub btnCalcularIVA_Click";
  //BA.debugLineNum = 42;BA.debugLine="Dim valorProducto As Double";
@@ -379,17 +381,38 @@ _valorproducto = (double)(Double.parseDouble(mostCurrent._edtvalorproducto.getTe
 _tasaiva = 0;
  //BA.debugLineNum = 47;BA.debugLine="tasaIVA = 0.19 ' editando este valor se puede cam";
 _tasaiva = 0.19;
- //BA.debugLineNum = 50;BA.debugLine="Dim valorFinal As Double";
+ //BA.debugLineNum = 50;BA.debugLine="Dim porcentajeDescuento As Double";
+_porcentajedescuento = 0;
+ //BA.debugLineNum = 51;BA.debugLine="If valorProducto < 1000000 Then";
+if (_valorproducto<1000000) { 
+ //BA.debugLineNum = 52;BA.debugLine="porcentajeDescuento = 0.05 ' 5% de descuento";
+_porcentajedescuento = 0.05;
+ }else if(_valorproducto>=1000000 && _valorproducto<=5000000) { 
+ //BA.debugLineNum = 54;BA.debugLine="porcentajeDescuento = 0.1 ' 10% de descuento";
+_porcentajedescuento = 0.1;
+ }else {
+ //BA.debugLineNum = 56;BA.debugLine="porcentajeDescuento = 0 ' Sin descuento";
+_porcentajedescuento = 0;
+ };
+ //BA.debugLineNum = 60;BA.debugLine="Dim valorDescuento As Double";
+_valordescuento = 0;
+ //BA.debugLineNum = 61;BA.debugLine="valorDescuento = valorProducto * porcentajeDescue";
+_valordescuento = _valorproducto*_porcentajedescuento;
+ //BA.debugLineNum = 62;BA.debugLine="Dim valorConDescuento As Double";
+_valorcondescuento = 0;
+ //BA.debugLineNum = 63;BA.debugLine="valorConDescuento = valorProducto - valorDescuent";
+_valorcondescuento = _valorproducto-_valordescuento;
+ //BA.debugLineNum = 66;BA.debugLine="Dim valorFinal As Double";
 _valorfinal = 0;
- //BA.debugLineNum = 51;BA.debugLine="valorFinal = valorProducto * (1 + tasaIVA) ' Se c";
-_valorfinal = _valorproducto*(1+_tasaiva);
- //BA.debugLineNum = 54;BA.debugLine="lblValorOriginal.Text = \"Valor Original: \" & Numb";
+ //BA.debugLineNum = 67;BA.debugLine="valorFinal = valorConDescuento * (1 + tasaIVA)";
+_valorfinal = _valorcondescuento*(1+_tasaiva);
+ //BA.debugLineNum = 70;BA.debugLine="lblValorOriginal.Text = \"Valor Original: \" & Numb";
 mostCurrent._lblvalororiginal.setText(BA.ObjectToCharSequence("Valor Original: "+anywheresoftware.b4a.keywords.Common.NumberFormat(_valorproducto,(int) (0),(int) (2))));
- //BA.debugLineNum = 55;BA.debugLine="lblIVA.Text = \"IVA (\" & NumberFormat(tasaIVA * 10";
-mostCurrent._lbliva.setText(BA.ObjectToCharSequence("IVA ("+anywheresoftware.b4a.keywords.Common.NumberFormat(_tasaiva*100,(int) (0),(int) (2))+"%): "+anywheresoftware.b4a.keywords.Common.NumberFormat(_valorproducto*_tasaiva,(int) (0),(int) (2))));
- //BA.debugLineNum = 56;BA.debugLine="lblValorFinal.Text = \"Valor Final: \" & NumberForm";
-mostCurrent._lblvalorfinal.setText(BA.ObjectToCharSequence("Valor Final: "+anywheresoftware.b4a.keywords.Common.NumberFormat(_valorfinal,(int) (0),(int) (2))));
- //BA.debugLineNum = 57;BA.debugLine="End Sub";
+ //BA.debugLineNum = 71;BA.debugLine="lblIVA.Text = \"IVA (\" & NumberFormat(tasaIVA * 10";
+mostCurrent._lbliva.setText(BA.ObjectToCharSequence("IVA ("+anywheresoftware.b4a.keywords.Common.NumberFormat(_tasaiva*100,(int) (0),(int) (2))+"%): "+anywheresoftware.b4a.keywords.Common.NumberFormat(_valorcondescuento*_tasaiva,(int) (0),(int) (2))));
+ //BA.debugLineNum = 72;BA.debugLine="lblValorFinal.Text = \"Valor Final con Descuento:";
+mostCurrent._lblvalorfinal.setText(BA.ObjectToCharSequence("Valor Final con Descuento: "+anywheresoftware.b4a.keywords.Common.NumberFormat(_valorfinal,(int) (0),(int) (2))+" (Descuento: "+anywheresoftware.b4a.keywords.Common.NumberFormat(_valordescuento,(int) (0),(int) (2))+")"));
+ //BA.debugLineNum = 73;BA.debugLine="End Sub";
 return "";
 }
 public static String  _globals() throws Exception{
@@ -404,7 +427,7 @@ mostCurrent._lblvalororiginal = new anywheresoftware.b4a.objects.LabelWrapper();
 mostCurrent._lbliva = new anywheresoftware.b4a.objects.LabelWrapper();
  //BA.debugLineNum = 24;BA.debugLine="Private lblValorFinal As Label";
 mostCurrent._lblvalorfinal = new anywheresoftware.b4a.objects.LabelWrapper();
- //BA.debugLineNum = 25;BA.debugLine="Private pnlCalculadoraIVA As Panel";
+ //BA.debugLineNum = 25;BA.debugLine="Private pnlCalculadoraIVA As Panel ' Agregado un";
 mostCurrent._pnlcalculadoraiva = new anywheresoftware.b4a.objects.PanelWrapper();
  //BA.debugLineNum = 26;BA.debugLine="End Sub";
 return "";
@@ -423,9 +446,7 @@ starter._process_globals();
 		}
     }
 }public static String  _process_globals() throws Exception{
- //BA.debugLineNum = 14;BA.debugLine="Sub Process_Globals";
- //BA.debugLineNum = 16;BA.debugLine="Private xui As XUI";
-_xui = new anywheresoftware.b4a.objects.B4XViewWrapper.XUI();
+ //BA.debugLineNum = 15;BA.debugLine="Sub Process_Globals";
  //BA.debugLineNum = 17;BA.debugLine="End Sub";
 return "";
 }
