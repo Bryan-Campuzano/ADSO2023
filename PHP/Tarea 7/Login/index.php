@@ -16,8 +16,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                 <table border="1">                   
                     <tbody>
                         <tr>
-                            <td><label for="email">Correo Electrónico:</label> </td>
-                            <td><input type="email" id="email" name="email" required ></td>
+                            <td><label for="user">Usuario:</label> </td>
+                            <td><input type="text" id="user" name="user" required ></td>
                         </tr>
                         <tr>
                             <td><label for="contrasena">Contraseña:</label></td>

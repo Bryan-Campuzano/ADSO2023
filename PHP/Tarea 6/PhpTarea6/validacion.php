@@ -5,7 +5,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHP.php to edit this template
  */
 
-if (strcasecmp($_POST['email'],"usuario@coltext.com")==0 && strcmp($_POST['password'],"COCOcoco1234@")==0){
+if (strcasecmp($_POST['email'],"usuario@coltext.com")==0 && strcmp($_POST['password'],"COCOcoco")==0){
     session_start();
     $_SESSION['usuario'] = $_POST['email'];
     echo "<script>window.location.replace('pagina2.php');</script>";

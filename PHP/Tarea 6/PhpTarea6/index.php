@@ -10,7 +10,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
         <link href='https://fonts.googleapis.com/css?family=DM Serif Display' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
         <link href="resources/css/login.css" rel="stylesheet" type="text/css"/>
-        
+        <script src="resources/js/validaciones.js" type="text/javascript"></script>
     </head>
     <body>
         <div class="banner">
