@@ -339,10 +339,9 @@ public anywheresoftware.b4a.keywords.Common __c = null;
 public static anywheresoftware.b4a.objects.B4XViewWrapper.XUI _xui = null;
 public anywheresoftware.b4a.objects.EditTextWrapper _edtvalorproducto = null;
 public anywheresoftware.b4a.objects.ButtonWrapper _btncalculariva = null;
-public anywheresoftware.b4a.objects.LabelWrapper _lblvalororiginal = null;
 public anywheresoftware.b4a.objects.LabelWrapper _lbliva = null;
 public anywheresoftware.b4a.objects.LabelWrapper _lblvalorfinal = null;
-public anywheresoftware.b4a.objects.PanelWrapper _pnlcalculadoraiva = null;
+public anywheresoftware.b4a.objects.LabelWrapper _lblvalororginal = null;
 public b4a.example.starter _starter = null;
 
 public static boolean isAnyActivityVisible() {
@@ -350,46 +349,46 @@ public static boolean isAnyActivityVisible() {
 vis = vis | (main.mostCurrent != null);
 return vis;}
 public static String  _activity_create(boolean _firsttime) throws Exception{
- //BA.debugLineNum = 36;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
- //BA.debugLineNum = 37;BA.debugLine="Activity.LoadLayout(\"CalculadoraIVA\")";
+ //BA.debugLineNum = 27;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
+ //BA.debugLineNum = 28;BA.debugLine="Activity.LoadLayout(\"CalculadoraIVA\")";
 mostCurrent._activity.LoadLayout("CalculadoraIVA",mostCurrent.activityBA);
- //BA.debugLineNum = 38;BA.debugLine="End Sub";
+ //BA.debugLineNum = 29;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_pause(boolean _userclosed) throws Exception{
- //BA.debugLineNum = 32;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
- //BA.debugLineNum = 34;BA.debugLine="End Sub";
+ //BA.debugLineNum = 35;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
+ //BA.debugLineNum = 37;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_resume() throws Exception{
- //BA.debugLineNum = 28;BA.debugLine="Sub Activity_Resume";
- //BA.debugLineNum = 30;BA.debugLine="End Sub";
+ //BA.debugLineNum = 31;BA.debugLine="Sub Activity_Resume";
+ //BA.debugLineNum = 33;BA.debugLine="End Sub";
 return "";
 }
 public static String  _btncalculariva_click() throws Exception{
 double _valorproducto = 0;
 double _tasaiva = 0;
 double _valorfinal = 0;
- //BA.debugLineNum = 40;BA.debugLine="Sub btnCalcularIVA_Click";
- //BA.debugLineNum = 42;BA.debugLine="Dim valorProducto As Double";
+ //BA.debugLineNum = 39;BA.debugLine="Sub btnCalcularIVA_Click";
+ //BA.debugLineNum = 41;BA.debugLine="Dim valorProducto As Double";
 _valorproducto = 0;
- //BA.debugLineNum = 43;BA.debugLine="valorProducto = edtValorProducto.Text";
+ //BA.debugLineNum = 42;BA.debugLine="valorProducto = edtValorProducto.Text";
 _valorproducto = (double)(Double.parseDouble(mostCurrent._edtvalorproducto.getText()));
- //BA.debugLineNum = 46;BA.debugLine="Dim tasaIVA As Double";
+ //BA.debugLineNum = 45;BA.debugLine="Dim tasaIVA As Double";
 _tasaiva = 0;
- //BA.debugLineNum = 47;BA.debugLine="tasaIVA = 0.19 ' editando este valor se puede cam";
+ //BA.debugLineNum = 46;BA.debugLine="tasaIVA = 0.19 ' editando este valor se puede cam";
 _tasaiva = 0.19;
- //BA.debugLineNum = 50;BA.debugLine="Dim valorFinal As Double";
+ //BA.debugLineNum = 49;BA.debugLine="Dim valorFinal As Double";
 _valorfinal = 0;
- //BA.debugLineNum = 51;BA.debugLine="valorFinal = valorProducto * (1 + tasaIVA) ' Se c";
+ //BA.debugLineNum = 50;BA.debugLine="valorFinal = valorProducto * (1 + tasaIVA) ' Se c";
 _valorfinal = _valorproducto*(1+_tasaiva);
- //BA.debugLineNum = 54;BA.debugLine="lblValorOriginal.Text = \"Valor Original: \" & Numb";
-mostCurrent._lblvalororiginal.setText(BA.ObjectToCharSequence("Valor Original: "+anywheresoftware.b4a.keywords.Common.NumberFormat(_valorproducto,(int) (0),(int) (2))));
- //BA.debugLineNum = 55;BA.debugLine="lblIVA.Text = \"IVA (\" & NumberFormat(tasaIVA * 10";
+ //BA.debugLineNum = 53;BA.debugLine="lblValorOrginal.Text = \"Valor Original: \" & Numbe";
+mostCurrent._lblvalororginal.setText(BA.ObjectToCharSequence("Valor Original: "+anywheresoftware.b4a.keywords.Common.NumberFormat(_valorproducto,(int) (0),(int) (2))));
+ //BA.debugLineNum = 54;BA.debugLine="lblIVA.Text = \"IVA (\" & NumberFormat(tasaIVA * 10";
 mostCurrent._lbliva.setText(BA.ObjectToCharSequence("IVA ("+anywheresoftware.b4a.keywords.Common.NumberFormat(_tasaiva*100,(int) (0),(int) (2))+"%): "+anywheresoftware.b4a.keywords.Common.NumberFormat(_valorproducto*_tasaiva,(int) (0),(int) (2))));
- //BA.debugLineNum = 56;BA.debugLine="lblValorFinal.Text = \"Valor Final: \" & NumberForm";
+ //BA.debugLineNum = 55;BA.debugLine="lblValorFinal.Text = \"Valor Final: \" & NumberForm";
 mostCurrent._lblvalorfinal.setText(BA.ObjectToCharSequence("Valor Final: "+anywheresoftware.b4a.keywords.Common.NumberFormat(_valorfinal,(int) (0),(int) (2))));
- //BA.debugLineNum = 57;BA.debugLine="End Sub";
+ //BA.debugLineNum = 56;BA.debugLine="End Sub";
 return "";
 }
 public static String  _globals() throws Exception{
@@ -398,15 +397,13 @@ public static String  _globals() throws Exception{
 mostCurrent._edtvalorproducto = new anywheresoftware.b4a.objects.EditTextWrapper();
  //BA.debugLineNum = 21;BA.debugLine="Private btnCalcularIVA As Button";
 mostCurrent._btncalculariva = new anywheresoftware.b4a.objects.ButtonWrapper();
- //BA.debugLineNum = 22;BA.debugLine="Private lblValorOriginal As Label";
-mostCurrent._lblvalororiginal = new anywheresoftware.b4a.objects.LabelWrapper();
- //BA.debugLineNum = 23;BA.debugLine="Private lblIVA As Label";
+ //BA.debugLineNum = 22;BA.debugLine="Private lblIVA As Label";
 mostCurrent._lbliva = new anywheresoftware.b4a.objects.LabelWrapper();
- //BA.debugLineNum = 24;BA.debugLine="Private lblValorFinal As Label";
+ //BA.debugLineNum = 23;BA.debugLine="Private lblValorFinal As Label";
 mostCurrent._lblvalorfinal = new anywheresoftware.b4a.objects.LabelWrapper();
- //BA.debugLineNum = 25;BA.debugLine="Private pnlCalculadoraIVA As Panel";
-mostCurrent._pnlcalculadoraiva = new anywheresoftware.b4a.objects.PanelWrapper();
- //BA.debugLineNum = 26;BA.debugLine="End Sub";
+ //BA.debugLineNum = 24;BA.debugLine="Private lblValorOrginal As Label";
+mostCurrent._lblvalororginal = new anywheresoftware.b4a.objects.LabelWrapper();
+ //BA.debugLineNum = 25;BA.debugLine="End Sub";
 return "";
 }
 
