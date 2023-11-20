@@ -14,7 +14,7 @@ $query->execute();
 if($query->rowCount() > 0 ){
     session_start();
     $_SESSION['usuario'] = $user;
-    echo "<script>window.location.replace('pagina2.php');</script>"; 
+    echo "<script>window.location.replace('listarempleados.php');</script>"; 
 }else{
       echo "<script> alert('Nombre de usuario y/o contraseña incorrectos'); "
     . "window.location.replace('index.php');</script>";    

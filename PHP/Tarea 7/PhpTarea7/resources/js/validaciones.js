@@ -14,3 +14,13 @@ function validarTamano(inputid, mintam, maxtam) {
         input.setCustomValidity("");        
     }
 }
+function validarFormulario() {
+    var username = document.getElementById("email");
+    var password = document.getElementById("password");
+
+    if (username.value.trim() === "" || password.value.trim() === "") {
+        alert("Por favor, completa todos los campos.");
+        return false;
+    }
+    return true;
+}
