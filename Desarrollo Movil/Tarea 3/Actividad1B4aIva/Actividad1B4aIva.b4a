@@ -1,12 +1,14 @@
 ﻿Build1=Default,b4a.example
-File1=Layout.bal
+File1=CalculadoraIVA.bal
+File2=Layout.bal
 FileGroup1=Default Group
+FileGroup2=Default Group
 Group=Calculadora IVA
 Library1=core
 Library2=xui
 ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: https://www.b4x.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="33"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true" ~\n~    android:smallScreens="true" ~\n~    android:anyDensity="true"/>)~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~CreateResourceFromFile(Macro, Themes.LightTheme)~\n~'End of default text.~\n~
 Module1=Starter
-NumberOfFiles=1
+NumberOfFiles=2
 NumberOfLibraries=2
 NumberOfModules=1
 Version=12.5
@@ -32,10 +34,13 @@ End Sub
 Sub Globals
 	Private edtValorProducto As EditText
 	Private btnCalcularIVA As Button
-	Private lblValorOriginal As Label
 	Private lblIVA As Label
 	Private lblValorFinal As Label
-	Private pnlCalculadoraIVA As Panel
+	Private lblValorOrginal As Label
+End Sub
+
+Sub Activity_Create(FirstTime As Boolean)
+	Activity.LoadLayout("CalculadoraIVA")
 End Sub
 
 Sub Activity_Resume
@@ -44,10 +49,6 @@ End Sub
 
 Sub Activity_Pause (UserClosed As Boolean)
 
-End Sub
-
-Sub Activity_Create(FirstTime As Boolean)
-	Activity.LoadLayout("CalculadoraIVA") 
 End Sub
 
 Sub btnCalcularIVA_Click
@@ -64,7 +65,7 @@ Sub btnCalcularIVA_Click
 	valorFinal = valorProducto * (1 + tasaIVA) ' Se corrigió la fórmula para incluir el IVA
    
 	' Muestra los resultados en las etiquetas
-	lblValorOriginal.Text = "Valor Original: " & NumberFormat(valorProducto, 0, 2)
+	lblValorOrginal.Text = "Valor Original: " & NumberFormat(valorProducto, 0, 2)
 	lblIVA.Text = "IVA (" & NumberFormat(tasaIVA * 100, 0, 2) & "%): " & NumberFormat(valorProducto * tasaIVA, 0, 2) ' Corregido para mostrar el valor del IVA correctamente
 	lblValorFinal.Text = "Valor Final: " & NumberFormat(valorFinal, 0, 2)
 End Sub

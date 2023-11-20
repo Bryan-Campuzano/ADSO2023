@@ -1,9 +1,9 @@
-﻿ModuleBookmarks0=33
+﻿ModuleBookmarks0=
 ModuleBookmarks1=
 ModuleBreakpoints0=
 ModuleBreakpoints1=
-ModuleClosedNodes0=1,2
+ModuleClosedNodes0=
 ModuleClosedNodes1=1
-NavigationStack=Main,Globals,21,0,Main,Process_Globals,14,4,Main,Activity_Create,28,4,Main,Activity_Pause,39,0,Main,btnCalcularIVA_Click,39,0,Main,Activity_Resume,32,0
+NavigationStack=Main,Process_Globals,14,4,Main,Activity_Create,28,4,Diseñador Visual,Layout.bal,-100,3,Main,Activity_Resume,31,0,Main,Globals,20,0,Diseñador Visual,CalculadoraIVANueva.bal,-100,3,Main,Activity_Pause,35,0,Main,btnCalcularIVA_Click,43,6
 SelectedBuild=0
 VisibleModules=1

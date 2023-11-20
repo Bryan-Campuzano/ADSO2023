@@ -1,12 +1,14 @@
 ﻿Build1=Default,b4a.example
-File1=Layout.bal
+File1=CalculadoraIVANueva.bal
+File2=Layout.bal
 FileGroup1=Default Group
+FileGroup2=Default Group
 Group=Default Group
 Library1=core
 Library2=xui
 ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: https://www.b4x.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="33"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true" ~\n~    android:smallScreens="true" ~\n~    android:anyDensity="true"/>)~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~CreateResourceFromFile(Macro, Themes.LightTheme)~\n~'End of default text.~\n~
 Module1=Starter
-NumberOfFiles=1
+NumberOfFiles=2
 NumberOfLibraries=2
 NumberOfModules=1
 Version=12.5
@@ -32,14 +34,10 @@ End Sub
 Sub Globals
 	Private edtValorProducto As EditText
 	Private btnCalcularIVA As Button
-	Private lblValorOriginal As Label
-	Private lblIVA As Label
-	Private lblValorFinal As Label
-	Private pnlCalculadoraIVA As Panel ' Agregado un Panel
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
-	Activity.LoadLayout("CalculadoraIVA") ' Cambiado a "CalculadoraIVA" en lugar de "Calculadora IVA"
+	Activity.LoadLayout("CalculadoraIVANueva") 
 End Sub
 
 Sub Activity_Resume
@@ -51,37 +49,50 @@ Sub Activity_Pause (UserClosed As Boolean)
 End Sub
 
 Sub btnCalcularIVA_Click
-	' Obtén el valor del producto desde el EditText
+	' Declaramos las variables necesarias'
+    
 	Dim valorProducto As Double
-	valorProducto = edtValorProducto.Text
-   
-	' Calcula el IVA (suponiendo una tasa del 19%)
+	Dim valorDescuento As Double
+	Dim valorFinal As Double
+	Dim valorConDescuento As Double
 	Dim tasaIVA As Double
+	Dim porcentajeDescuento As Double
+
+	' Obtén el valor del producto desde el EditText
+	If IsNumber(edtValorProducto.Text) Then
+		valorProducto = edtValorProducto.Text
+	Else
+		Msgbox("Introduzca un valor válido", "")
+	End If
+
+	' Calcula el IVA (suponiendo una tasa del 19%)
 	tasaIVA = 0.19 ' editando este valor se puede cambiar el iva
 
+	'inicializa el porcentaje
+	porcentajeDescuento = 0 
+
 	' Calcula el descuento según el valor del producto
-	Dim porcentajeDescuento As Double
 	If valorProducto < 1000000 Then
 		porcentajeDescuento = 0.05 ' 5% de descuento
 	Else If valorProducto >= 1000000 And valorProducto <= 5000000 Then
 		porcentajeDescuento = 0.1 ' 10% de descuento
-	Else
-		porcentajeDescuento = 0 ' Sin descuento
+	Else If valorProducto > 5000000 Then
+		porcentajeDescuento = 0.2 ' 20% de descuento
 	End If
 
 	' Calcula el descuento y aplica al valor del producto
-	Dim valorDescuento As Double
 	valorDescuento = valorProducto * porcentajeDescuento
-	Dim valorConDescuento As Double
+	valorConDescuento = valorProducto - valorDescuento
+	
+	' Calcula el nuevo valor de descuento y aplica al valor del producto
+	valorDescuento = valorProducto * porcentajeDescuento
 	valorConDescuento = valorProducto - valorDescuento
 
 	' Calcula el valor final más el IVA
-	Dim valorFinal As Double
 	valorFinal = valorConDescuento * (1 + tasaIVA)
 
-	' Muestra los resultados en las etiquetas
-	lblValorOriginal.Text = "Valor Original: " & NumberFormat(valorProducto, 0, 2)
-	lblIVA.Text = "IVA (" & NumberFormat(tasaIVA * 100, 0, 2) & "%): " & NumberFormat(valorConDescuento * tasaIVA, 0, 2)
-	lblValorFinal.Text = "Valor Final con Descuento: " & NumberFormat(valorFinal, 0, 2) & " (Descuento: " & NumberFormat(valorDescuento, 0, 2) & ")"
+	' Muestra el resultado en un cuadro de mensaje
+	Msgbox("Valor del Producto: " & valorProducto & CRLF & "IVA: " & tasaIVA & CRLF & "Descuento Especial: " & valorDescuento & CRLF & "Total: " & valorFinal, "Resultado")
 End Sub
+
 
