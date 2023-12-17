@@ -1,0 +1,387 @@
+/* Contenedor cuadrado de contenido */
+.container1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    height: auto; /* Esto centra verticalmente en la página */
+    background-color: #e9e3bb;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    width: auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.444);
+}
+.container2 {
+    border: 1px solid #ccc;
+    padding: 20px;
+    height: auto; /* Esto centra verticalmente en la página */
+    font-family: 'Montserrat';
+    font-size: 22px;
+    width: auto;
+    border-radius: 20px;
+}
+.container3 {
+    padding: 20px;
+    height: auto; /* Esto centra verticalmente en la página */
+    font-family: 'Montserrat';
+    font-size: 22px;
+    width: auto;
+    border-radius: 20px;
+}
+.container4 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    height: auto; /* Esto centra verticalmente en la página */
+    background-image: url('multimedia/back1.PNG');
+    font-family: 'Montserrat';
+    font-size: 22px;
+    width: auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.444);
+}
+/* formato principal de títulos */
+.titlefont {
+    font-family: 'DM Serif Display';
+    font-size: 72px;
+    margin: 0;
+    color: #a57512;
+}
+.titlefont2 {
+    font-family: 'DM Serif Display';
+    font-size: 24px;
+    margin: 0;
+    color: #a57512;
+}
+.titlefont3 {
+    font-family: 'DM Serif Display';
+    font-size: 72px;
+    margin: 0;
+    color: #042212;
+}
+/* Formato de banner */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    background-color: #042212;
+    padding: 10px;
+}
+.banner2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e9e3bb;
+    padding: 10px;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    width: auto;
+    border-radius: 20px;
+    color: #042212;
+}
+.footer1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    background-color: #042212;
+    padding: 10px;
+}
+/* Contenedor cuadrado de contenido para errores */
+.error-body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9e3bb;
+}
+/* Contenedor cuadrado de contenido dentro del body de error, para disponer de contenedores dentro del body del error */
+.error-container {
+    text-align: center;
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+}
+
+/* Clase que permite editar los parámetros de la imagen de error, es aquí donde incluimos la animación */
+.error-image {
+    animation: bounce 2s infinite;
+    margin-right: 20px; /* Espacio entre la imagen y el contenido */
+}
+
+/* animación de la imagen de error */
+@keyframes bounce {
+    /* entendiendo la animación como un fragmento de tiempo que va de 0 a 100, definimos momentos entro de este proceso
+        en estos 5 momentos particulares (0%, 20%, 50%, 80%, 100%) la posición vertical de la imagen sera el origen*/
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px); /* en el momento 40 subimos la imagen 20 pixeles verticalmente */
+    }
+    60% {
+        transform: translateY(-10px); /* en el momento 60 subimos la imagen 10 pixeles verticalmente */
+    }
+}
+
+/* Contenedor cuadrado de contenido de párrafo */
+.p-cuadrado {
+    font-family: 'Montserrat';
+    font-size: 24px;
+    margin: 0;
+    color: #042212;
+    width: 600px; /* Ancho deseado */
+    height: auto; /* Altura deseada */
+}
+/* agrega una imagen a un elemento seleccionado */
+.add{
+    background-image: url("multimedia/1 sin fondo.png");
+}
+.btn1{
+    background-image:url('multimedia/1 sin fondo.png');
+    background-repeat:no-repeat;
+    height:60px;
+    width:70px;
+    background-size: 50px 50px;
+    background-position:center;
+}
+.btn2{
+    background-image:url('multimedia/icono-campana.png');
+    background-repeat:no-repeat;
+    height:60px;
+    width:70px;
+
+    background-size: 50px 50px;
+    background-position:center;
+}
+.btn3{
+    background-image:url('multimedia/usuario-icono.png');
+    background-repeat:no-repeat;
+    height:60px;
+    width:70px;
+    background-size: 50px 50px;
+    background-position:center;
+
+}
+.btn4{
+    background-image:url('multimedia/wtsp.png');
+    background-repeat:no-repeat;
+    height:60px;
+    width:70px;
+    background-size: 50px 50px;
+    background-position:center;
+
+}
+.btn5{
+    background-image:url('multimedia/mail.png');
+    background-repeat:no-repeat;
+    height:60px;
+    width:70px;
+    background-size: 50px 50px;
+    background-position:center;
+
+}
+.btn6{
+    background-image:url('multimedia/face.png');
+    background-repeat:no-repeat;
+    height:60px;
+    width:70px;
+    background-size: 50px 50px;
+    background-position:center;
+
+}
+.padre {
+    /* Codigo para centrar*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    /* Fin del codigo para centrar*/
+}
+.divider{
+    padding: 20px;
+    height: 10vh; /* Esto centra verticalmente en la página */
+    background-color: white;
+}
+.divider2{
+    padding: 20px;
+    height: 10vh; /* Esto centra verticalmente en la página */
+    background-color: #e9e3bb;
+}
+nav{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    left: 0;
+    background: #fff;
+    width: 280px;
+    overflow: hidden;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+a{
+    position: relative;
+    color: rgb(85, 83, 83);
+    font-size: 14px;
+    display: table;
+    width: 280px;
+    padding: 10px;
+}
+nav .fas{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+}
+.nav-item{
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+}
+a:hover{
+    background: #a57512;
+}
+.logout{
+    position: absolute;
+    bottom: 0;
+}
+
+/* Main Section */
+.main{
+    position: relative;
+    padding: 20px;
+    width: 100%;
+}
+.main-top{
+    display: flex;
+    width: 100%;
+}
+.main-top i{
+    position: absolute;
+    right: 0;
+    margin: 10px 30px;
+    color: rgb(110, 109, 109);
+    cursor: pointer;
+}
+.main-skills{
+    display: flex;
+    margin-top: 20px;
+}
+.main-skills .card{
+    width: 25%;
+    margin: 10px;
+    background: #e9e3bb;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.444);
+}
+.main-skills .card h3{
+    margin: 10px;
+    text-transform: capitalize;
+}
+.main-skills .card p{
+    font-size: 12px;
+}
+.main-skills .card button{
+    background: #042212;
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.main-skills .card button:hover{
+    background: #a57512;
+}
+.main-skills .card i{
+    font-size: 22px;
+    padding: 10px;
+}
+
+/* Courses */
+.main-course{
+    margin-top:20px ;
+    text-transform: capitalize;
+}
+.course-box{
+    width: 100%;
+    height: 300px;
+    padding: 10px 10px 30px 10px;
+    margin-top: 10px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.course-box ul{
+    list-style: none;
+    display: flex;
+}
+.course-box ul li{
+    margin: 10px;
+    color: gray;
+    cursor: pointer;
+}
+.course-box ul .active{
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+.course-box .course{
+    display: flex;
+}
+.box{
+    width: 33%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background: #e9e3bb;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.444);
+}
+.box p{
+    font-size: 12px;
+    margin-top: 5px;
+}
+.box button{
+    background: #042212;
+    color: #fff;
+    padding: 7px 10px;
+    border-radius: 10px;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+.box button:hover{
+    background: #a57512;
+}
+.btnpqrs{
+    background: #042212;
+    color: #fff;
+    padding: 7px 10px;
+    border-radius: 10px;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+.btnpqrs:hover{
+    background: #a57512;
+}
+.box i{
+    font-size: 7rem;
+    float: right;
+    margin: -20px 20px 20px 0;
+}
+.subrayado {
+    text-decoration: underline;
+}
+.sin-estilo {
+    text-decoration: none;
+    color: inherit;
+}
