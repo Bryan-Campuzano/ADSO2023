@@ -14,35 +14,37 @@ Este repositorio contiene una variedad de actividades y proyectos desarrollados 
 - **Python**: Proyectos y scripts en Python.
 - **Spring Projects**: Proyectos desarrollados con el framework Spring.
 
-Construido con 🛠️
+### Construido con 🛠️
 
 Herramientas y frameworks utilizados en los proyectos:
 
-    Django: El framework web usado.
+- **Django**: El framework web usado.
 
-    MySQL: Sistema de base de datos.
+- **MySQL**: Sistema de base de datos.
 
-    Heroku: Plataforma de despliegue.
+- **Heroku**: Plataforma de despliegue.
 
-    Bootstrap: Framework CSS para el frontend.
+- **Bootstrap**: Framework CSS para el frontend.
 
-    Flutter: Desarrollo Android
+- **Flutter**: Desarrollo Android
 
-    DotNet: Desarrollo C#
+- **DotNet**: Desarrollo C#
 
-    SpringBoot: Framework Backend
+- **SpringBoot**: Framework Backend
 
-Autores ✒️
+### Autores ✒️
 
-    Bryan Campuzano - Estudiante ADSO
+Bryan Campuzano - Estudiante ADSO
 
-Licencia 📄
+### Licencia 📄
 
 Este proyecto está bajo la Licencia MIT - mira el archivo LICENSE.md para detalles.
-Expresiones de Gratitud 🎁
+Expresiones de 
 
-    Gracias a Mis compañeros, gracias a ellos todo este largo proceso fue mas ameno.
+### Gratitud 🎁
 
-    Y también gracias a la cúpula educativa del SENA, por su compromiso y aporte a mi educación, gracias totales 🤓.
+Gracias a Mis compañeros, gracias a ellos todo este largo proceso fue mas ameno.
+
+Y también gracias a la cúpula educativa del SENA, por su compromiso y aporte a mi educación, gracias totales 🤓.
 
 ⌨️ con ❤️ por Bryan Campuzano - ADSO2023 😊
