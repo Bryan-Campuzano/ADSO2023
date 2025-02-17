@@ -1,7 +1,7 @@
 {
   "project_info": {
     "project_number": "950815703509",
-    "project_id": "pedidos-coltext-c57bb",
+    "project_id": "introducir el project ID",
     "storage_bucket": "pedidos-coltext-c57bb.appspot.com"
   },
   "client": [
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCBGiIZVCHYzL5UQrGdgGe_A-xkI7gAe_Y"
+          "current_key": "Introducir la Key necesaria para Gcloud"
         }
       ],
       "services": {
