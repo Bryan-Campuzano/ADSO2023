@@ -1,0 +1,28 @@
+C:/Users/bryan.campuzano/Downloads/Ejercicios C# fundamentos/NetTarea1/bin/Debug/net8.0/NetTarea1.exe
+C:/Users/bryan.campuzano/Downloads/Ejercicios C# fundamentos/NetTarea1/bin/Debug/net8.0/NetTarea1.deps.json
+C:/Users/bryan.campuzano/Downloads/Ejercicios C# fundamentos/NetTarea1/bin/Debug/net8.0/NetTarea1.runtimeconfig.json
+C:/Users/bryan.campuzano/Downloads/Ejercicios C# fundamentos/NetTarea1/bin/Debug/net8.0/NetTarea1.dll
+C:/Users/bryan.campuzano/Downloads/Ejercicios C# fundamentos/NetTarea1/bin/Debug/net8.0/NetTarea1.pdb
+C:/Users/bryan.campuzano/Downloads/Ejercicios C# fundamentos/NetTarea1/obj/Debug/net8.0/NetTarea1.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/bryan.campuzano/Downloads/Ejercicios C# fundamentos/NetTarea1/obj/Debug/net8.0/NetTarea1.AssemblyInfoInputs.cache
+C:/Users/bryan.campuzano/Downloads/Ejercicios C# fundamentos/NetTarea1/obj/Debug/net8.0/NetTarea1.AssemblyInfo.cs
+C:/Users/bryan.campuzano/Downloads/Ejercicios C# fundamentos/NetTarea1/obj/Debug/net8.0/NetTarea1.csproj.CoreCompileInputs.cache
+C:/Users/bryan.campuzano/Downloads/Ejercicios C# fundamentos/NetTarea1/obj/Debug/net8.0/NetTarea1.dll
+C:/Users/bryan.campuzano/Downloads/Ejercicios C# fundamentos/NetTarea1/obj/Debug/net8.0/refint/NetTarea1.dll
+C:/Users/bryan.campuzano/Downloads/Ejercicios C# fundamentos/NetTarea1/obj/Debug/net8.0/NetTarea1.pdb
+C:/Users/bryan.campuzano/Downloads/Ejercicios C# fundamentos/NetTarea1/obj/Debug/net8.0/NetTarea1.genruntimeconfig.cache
+C:/Users/bryan.campuzano/Downloads/Ejercicios C# fundamentos/NetTarea1/obj/Debug/net8.0/ref/NetTarea1.dll
+/home/bryan/Proyectos de Programación/Net Proyects/NetTarea1/bin/Debug/net8.0/NetTarea1
+/home/bryan/Proyectos de Programación/Net Proyects/NetTarea1/bin/Debug/net8.0/NetTarea1.deps.json
+/home/bryan/Proyectos de Programación/Net Proyects/NetTarea1/bin/Debug/net8.0/NetTarea1.runtimeconfig.json
+/home/bryan/Proyectos de Programación/Net Proyects/NetTarea1/bin/Debug/net8.0/NetTarea1.dll
+/home/bryan/Proyectos de Programación/Net Proyects/NetTarea1/bin/Debug/net8.0/NetTarea1.pdb
+/home/bryan/Proyectos de Programación/Net Proyects/NetTarea1/obj/Debug/net8.0/NetTarea1.GeneratedMSBuildEditorConfig.editorconfig
+/home/bryan/Proyectos de Programación/Net Proyects/NetTarea1/obj/Debug/net8.0/NetTarea1.AssemblyInfoInputs.cache
+/home/bryan/Proyectos de Programación/Net Proyects/NetTarea1/obj/Debug/net8.0/NetTarea1.AssemblyInfo.cs
+/home/bryan/Proyectos de Programación/Net Proyects/NetTarea1/obj/Debug/net8.0/NetTarea1.csproj.CoreCompileInputs.cache
+/home/bryan/Proyectos de Programación/Net Proyects/NetTarea1/obj/Debug/net8.0/NetTarea1.dll
+/home/bryan/Proyectos de Programación/Net Proyects/NetTarea1/obj/Debug/net8.0/refint/NetTarea1.dll
+/home/bryan/Proyectos de Programación/Net Proyects/NetTarea1/obj/Debug/net8.0/NetTarea1.pdb
+/home/bryan/Proyectos de Programación/Net Proyects/NetTarea1/obj/Debug/net8.0/NetTarea1.genruntimeconfig.cache
+/home/bryan/Proyectos de Programación/Net Proyects/NetTarea1/obj/Debug/net8.0/ref/NetTarea1.dll

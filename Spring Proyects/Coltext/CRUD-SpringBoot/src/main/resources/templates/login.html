@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="utf-8">
+	<title>Inicio de sesion Coltext</title>
+	<!-- CSS only -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div style="width: 400px;">
+        <h1 class="text-center mb-4">Inicio de Sesión Coltext</h1>
+        <form th:action="@{/login}" th:object="${usuario}" method="POST">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    th:field="*{correo}">
+                <div id="emailHelp" class="form-text">No compartas tus credenciales con nadie.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" th:field="*{celular}">
+            </div>
+            <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+        </form>
+        <div th:if="${error != null}" class="alert alert-danger" role="alert">
+            <p th:text="${error}">Correo o contraseña incorrectos</p>
+        </div>        
+    </div>
+</body>
+
+</html>

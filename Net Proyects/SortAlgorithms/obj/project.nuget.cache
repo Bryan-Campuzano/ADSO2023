@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "QKtBmo6xV3n8eYU/VSbN6KRr8nuTsvvGIxpq5JE6jQIkf2F7mHEiNVjYIC65DQnq9faHi41Tr/57De38UgPJKA==",
+  "success": true,
+  "projectFilePath": "/home/bryan/Proyectos de Programación/Net Proyects/SortAlgorithms/SortAlgorithms.csproj",
+  "expectedPackageFiles": [
+    "/home/bryan/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.10/microsoft.aspnetcore.app.ref.8.0.10.nupkg.sha512"
+  ],
+  "logs": []
+}

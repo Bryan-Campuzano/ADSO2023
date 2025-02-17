@@ -1,0 +1,226 @@
+{
+    "domicilio": {
+      "1": {
+        "resumen": "Resumen del domicilio 1",
+        "fechaEnvio": "2024-01-01",
+        "estado": 1,
+        "domiciliario": 1004
+      },
+      "2": {
+        "resumen": "Resumen del domicilio 2",
+        "fechaEnvio": "2024-01-02",
+        "estado": 2,
+        "domiciliario": 1001
+      },
+      "3": {
+        "resumen": "Resumen del domicilio 3",
+        "fechaEnvio": "2024-01-03",
+        "estado": 3,
+        "domiciliario": 1002
+      }
+    },
+    "factura": {
+      "1": {
+        "fechaFactura": "2024-01-01",
+        "cantidadProductos": 10,
+        "detalladoProductos": 1001,
+        "subTotal": 100
+      },
+      "2": {
+        "fechaFactura": "2024-01-02",
+        "cantidadProductos": 20,
+        "detalladoProductos": 1002,
+        "subTotal": 200
+      },
+      "3": {
+        "fechaFactura": "2024-01-03",
+        "cantidadProductos": 30,
+        "detalladoProductos": 1003,
+        "subTotal": 300
+      }
+    },
+    "gestionadministracion": {
+      "1": {
+        "idAreaGestionAdministracion": 1,
+        "R.H": 1003,
+        "listaPqrs": 1
+      },
+      "2": {
+        "idAreaGestionAdministracion": 2,
+        "R.H": 1005,
+        "listaPqrs": 2
+      }
+    },
+    "gestionbodega": {
+      "1": {
+        "idAreaGestionBodega": 1,
+        "almacenista": 1002,
+        "insumosvendidos": 1,
+        "listaInsumos": 2
+      },
+      "2": {
+        "idAreaGestionBodega": 2,
+        "almacenista": 1001,
+        "insumosvendidos": 2,
+        "listaInsumos": 3
+      }
+    },
+    "insumo": {
+      "1": {
+        "nombre": "Insumo 1",
+        "precioUnitario": 10,
+        "descripcion": "Descripción del insumo 1",
+        "stock": 100
+      },
+      "2": {
+        "nombre": "Insumo 2",
+        "precioUnitario": 20,
+        "descripcion": "Descripción del insumo 2",
+        "stock": 200
+      },
+      "3": {
+        "nombre": "Insumo 3",
+        "precioUnitario": 30,
+        "descripcion": "Descripción del insumo 3",
+        "stock": 300
+      }
+    },
+    "pqrs": {
+      "1": {
+        "fechaRadicado": "2024-01-01",
+        "DescrpcionPqr": "Descripción PQR 1",
+        "Idtrabajador": 1003
+      },
+      "2": {
+        "fechaRadicado": "2024-01-02",
+        "DescrpcionPqr": "Descripción PQR 2",
+        "Idtrabajador": 1004
+      }
+    },
+    "promocion": {
+      "1": {
+        "rangoFechas": "2024-01-01",
+        "descripcion": "Descripción promoción 1",
+        "insumoenDescuento": 1
+      },
+      "2": {
+        "rangoFechas": "2024-01-02",
+        "descripcion": "Descripción promoción 2",
+        "insumoenDescuento": 2
+      }
+    },
+    "pyme": {
+      "1": {
+        "nombre": "Nombre Pyme 1",
+        "telefono": 123456789,
+        "correo": "correo@pyme1.com",
+        "direccionPyme": "Dirección Pyme 1",
+        "empleados": 1001
+      },
+      "2": {
+        "nombre": "Nombre Pyme 2",
+        "telefono": 987654321,
+        "correo": "correo@pyme2.com",
+        "direccionPyme": "Dirección Pyme 2",
+        "empleados": 1002
+      }
+    },
+    "rol": {
+      "1": {
+        "Descripcion": "Trabajador"
+      },
+      "2": {
+        "Descripcion": "Cliente"
+      },
+      "3": {
+        "Descripcion": "Almacenista"
+      },
+      "4": {
+        "Descripcion": "Vendedor"
+      },
+      "5": {
+        "Descripcion": "R.H"
+      }
+    },
+    "usuario": {
+      "1001": {
+        "nombres": "Rosa",
+        "apellidos": "García",
+        "correo": "rosagarcia@coltex.com",
+        "celular": "3010001234",
+        "direccion": "Carrera 4 #35 - 21",
+        "Rol": 1
+      },
+      "1002": {
+        "nombres": "Cristian",
+        "apellidos": "Arcila",
+        "correo": "cristianarcila@coltex.com",
+        "celular": "3010004567",
+        "direccion": "Calle 67A #21 - 52",
+        "Rol": 5
+      },
+      "1003": {
+        "nombres": "José",
+        "apellidos": "Santos",
+        "correo": "josesantos@coltex.com",
+        "celular": "3010006587",
+        "direccion": "Calle 35 #45B - 32",
+        "Rol": 4
+      },
+      "1004": {
+        "nombres": "Camilo",
+        "apellidos": "Bustos",
+        "correo": "camilobustos@coltex.com",
+        "celular": "3010006354",
+        "direccion": "Carrera 34 #84 - 41",
+        "Rol": 3
+      }
+    },
+    "venta": {
+      "1": {
+        "fehaventa": "2024-01-01",
+        "valorNeto": 100,
+        "insumos": 1,
+        "Factura": 1,
+        "vendedor": 1003,
+        "domicilio": 1
+      },
+      "2": {
+        "fehaventa": "2024-01-02",
+        "valorNeto": 200,
+        "insumos": 2,
+        "Factura": 2,
+        "vendedor": 1004,
+        "domicilio": 2
+      },
+      "3": {
+        "fehaventa": "2024-01-03",
+        "valorNeto": 300,
+        "insumos": 3,
+        "Factura": 3,
+        "vendedor": 1005,
+        "domicilio": 3
+      }
+    },
+    "ventas&fidelizacion": {
+      "1": {
+        "idAreaGestionVentas": 1,
+        "ingresoaCaja": "Ingreso a caja 1",
+        "rangodeFechas": "2024-01-01",
+        "historicoVentas": 1,
+        "vendedor": 1003,
+        "clientes": 1001,
+        "promociones": 1
+      },
+      "2": {
+        "idAreaGestionVentas": 2,
+        "ingresoaCaja": "Ingreso a caja 2",
+        "rangodeFechas": "2024-01-02",
+        "historicoVentas": 2,
+        "vendedor": 1004,
+        "clientes": 1002,
+        "promociones": 2
+      }
+    }
+  }
+  

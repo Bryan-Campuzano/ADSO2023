@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CrudSpringBootColtext",
+            "request": "launch",
+            "mainClass": "com.app.web.CrudSpringBootColtext",
+            "projectName": "com.app.crud"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-CrudSpringBootApplication<com.app.crud>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.app.web.CrudSpringBootApplication",
+            "projectName": "com.app.crud",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

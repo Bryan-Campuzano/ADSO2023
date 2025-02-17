@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "vZspQEIrbh1WswVE0FgdMx5ScujiP/K+Yfg712TpAm27X/hZHyKQ5R0/CfbgAIYSJVU0p26EoqSoI09+dNFwLA==",
+  "success": true,
+  "projectFilePath": "/home/bryan/Proyectos de Programación/Net Proyects/NetTarea9/NetTarea9.csproj",
+  "expectedPackageFiles": [
+    "/home/bryan/.nuget/packages/atksharp/3.24.24.95/atksharp.3.24.24.95.nupkg.sha512",
+    "/home/bryan/.nuget/packages/cairosharp/3.24.24.95/cairosharp.3.24.24.95.nupkg.sha512",
+    "/home/bryan/.nuget/packages/gdksharp/3.24.24.95/gdksharp.3.24.24.95.nupkg.sha512",
+    "/home/bryan/.nuget/packages/giosharp/3.24.24.95/giosharp.3.24.24.95.nupkg.sha512",
+    "/home/bryan/.nuget/packages/glibsharp/3.24.24.95/glibsharp.3.24.24.95.nupkg.sha512",
+    "/home/bryan/.nuget/packages/gtksharp/3.24.24.95/gtksharp.3.24.24.95.nupkg.sha512",
+    "/home/bryan/.nuget/packages/pangosharp/3.24.24.95/pangosharp.3.24.24.95.nupkg.sha512",
+    "/home/bryan/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.10/microsoft.aspnetcore.app.ref.8.0.10.nupkg.sha512"
+  ],
+  "logs": []
+}

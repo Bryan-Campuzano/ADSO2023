@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "950815703509",
+    "project_id": "pedidos-coltext-c57bb",
+    "storage_bucket": "pedidos-coltext-c57bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:950815703509:android:54f959b00759aae1003d5c",
+        "android_client_info": {
+          "package_name": "com.example.pedidos_coltex"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBGiIZVCHYzL5UQrGdgGe_A-xkI7gAe_Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

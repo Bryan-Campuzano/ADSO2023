@@ -1,0 +1,28 @@
+@page
+@model TicketManagement.Pages.TicketsModel
+@{
+    ViewData["Title"] = "Tickets";
+}
+
+<h2>Tickets</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Ticket ID</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var ticket in Model.Tickets)
+        {
+            <tr>
+                <td>@ticket.TicketID</td>
+                <td>@ticket.Title</td>
+                <td>@ticket.Description</td>
+                <td>@ticket.Status</td>
+            </tr>
+        }
+    </tbody>
+</table>

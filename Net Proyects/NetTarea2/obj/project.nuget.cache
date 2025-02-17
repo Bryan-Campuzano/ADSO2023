@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "3eMM8+tD3vah4o0u7ylKQnm+cv4bAB8J3JmZLoyCpX4sJPj21ZmJdM4KAoE3RYwchMVRc/8tG+vCACJ6abMXUg==",
+  "success": true,
+  "projectFilePath": "/home/bryan/Proyectos de Programación/Net Proyects/NetTarea2/NetTarea2.csproj",
+  "expectedPackageFiles": [
+    "/home/bryan/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.10/microsoft.aspnetcore.app.ref.8.0.10.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,57 @@
+[
+    {
+        "model": "books.book",
+        "pk": 1,
+        "fields": {
+            "title": "The Pragmatic Programmer",
+            "author": "Andrew Hunt, David Thomas",
+            "published_date": "1999-10-20",
+            "isbn": "9780135957059",
+            "available": true
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 2,
+        "fields": {
+            "title": "Clean Code",
+            "author": "Robert C. Martin",
+            "published_date": "2008-08-01",
+            "isbn": "9780132350884",
+            "available": true
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 3,
+        "fields": {
+            "title": "Design Patterns: Elements of Reusable Object-Oriented Software",
+            "author": "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides",
+            "published_date": "1994-10-31",
+            "isbn": "9780201633610",
+            "available": false
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 4,
+        "fields": {
+            "title": "Refactoring: Improving the Design of Existing Code",
+            "author": "Martin Fowler",
+            "published_date": "1999-07-08",
+            "isbn": "9780201485677",
+            "available": true
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 5,
+        "fields": {
+            "title": "The Mythical Man-Month",
+            "author": "Frederick P. Brooks Jr.",
+            "published_date": "1975-01-01",
+            "isbn": "9780201835953",
+            "available": false
+        }
+    }
+]
